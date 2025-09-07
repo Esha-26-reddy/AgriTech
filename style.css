@@ -1,0 +1,145 @@
+:root {
+  --olive-green: #556b2f;
+  --olive-light: #6b8e23;
+  --highlight: #0f0f0f; 
+  --bg-light: #f8f9fa;
+  --text-dark: #212529;
+  --text-light: #ffffff;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-dark);
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sticky Navbar */
+.custom-navbar {
+  background-color: var(--olive-green) !important;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.custom-navbar .navbar-brand {
+  color: var(--text-light);
+  font-weight: bold;
+}
+
+.custom-navbar .nav-link {
+  color: var(--text-light);
+  margin: 0 0.75rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+  color: var(--highlight);
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('https://media.istockphoto.com/id/1018703724/photo/plant-tree-in-neutral-background-close-up-of-fresh-green-plant.webp?a=1&b=1&s=612x612&w=0&k=20&c=f-n1kWk7SD-MvZP0OBTH5AsYcc8AQdM8BZL1mL5Hrxc=') center/cover no-repeat;
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-light);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+  padding: 2rem;
+}
+
+.hero-title {
+  color: var(--text-light);
+}
+
+/* Buttons */
+.btn-custom {
+  background-color: var(--highlight);
+  color: var(--text-light);
+  border: none;
+  transition: 0.3s;
+}
+.btn-custom:hover {
+  background-color: var(--olive-green);
+}
+
+/* Sections */
+.section-padding {
+  padding: 5rem 0;
+}
+
+/* Services Cards */
+.card-hover {
+  border: none;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%; /* uniform height */
+  display: flex;
+  flex-direction: column;
+}
+
+.card-hover img {
+  height: 200px; /* fixed image height */
+  object-fit: cover;
+}
+
+.card-hover .card-body {
+  flex: 1; /* stretches card body */
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+/* Crop & Blog Cards */
+.crop-card, .blog-card {
+  border: none;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.crop-card img, .blog-card img {
+  height: 220px;
+  object-fit: cover;
+}
+.crop-card:hover, .blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+/* Gallery */
+.gallery-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+/* Contact Form */
+.contact-form .form-control {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+}
+
+/* Footer */
+footer {
+  background: var(--olive-green);
+  color: var(--text-light);
+  padding: 1.5rem 0;
+}
